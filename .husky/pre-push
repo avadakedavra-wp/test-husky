@@ -1,0 +1,10 @@
+#!/bin/bash
+
+local_branch_name="$(git rev-parse --abbrev-ref HEAD)"
+
+message="Please do not commit directly to the main branch. Use a feature branch instead."
+
+if [[ $local_branch_name == 'main' ]]; then
+    echo "$message"
+    exit 1
+fi

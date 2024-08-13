@@ -1,0 +1,16 @@
+{
+  "name": "test-husky",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"testing jaaaa\" && exit 1",
+    "prepare": "husky ./husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "husky": "^9.1.4"
+  }
+}
